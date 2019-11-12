@@ -1,0 +1,19 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #CBDDF8;
+    
+}
+
+h1 {
+    margin-left: 3%;
+    font-size:36pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 3%;
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+}
