@@ -7,13 +7,13 @@ body {
 }
 
 h1 {
-    margin-left: 3%;
-    font-size:36pt;
+    margin-left: 6%;
+    font-size:30pt;
     font-family: 'Roboto', sans-serif;
 }
 
 p {
-    margin: 3%;
+    margin: 6%;
     font-size: 18pt;
     font-family: 'Roboto', sans-serif;
 }
