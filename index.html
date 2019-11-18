@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://kit.fontawesome.com/1c2af25903.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
     <div id="loading">
-    
+        <div id="spinner"></div>
     </div>
     
-    <div id="center">
+    <div id="center" class="animated slideInDown" style="animation-delay: 1.5s;">
         <h1>Hi! I'm Jessie. </h1>
         <p>
             I’m from Las Vegas, NV and currently a freshman at Brown University 
@@ -33,12 +34,16 @@
         </p>
         <table>
             <tr>
-                <td class="icon"><a href="https://www.facebook.com/jessieylii" class="fab fa-facebook fa-3x"></a></td>
-                <td class="icon"><a href="https://www.instagram.com/jawseeli" class="fab fa-instagram fa-3x"></a></td>
-                <td class="icon"><a href="https://www.linkedin.com/in/jessica-li-161b28182/" class="fab fa-linkedin-in fa-3x"></a></td>
-                <td class="icon"><a href="https://github.com/jessieyli" class="fab fa-github fa-3x"></a></td>
+                <td><a class="icon" href="https://www.facebook.com/jessieylii" target="_blank"><i class="fab fa-facebook fa-3x"></i></a></td>
+                <td><a class="icon" href="https://www.instagram.com/jawseeli" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></td>
+                <td><a class="icon" href="mailto: jessica_li2@brown.edu" target="_blank"><i class="fas fa-envelope fa-3x"></i></a></td>
+                <td><a class="icon" href="https://www.linkedin.com/in/jessica-li-161b28182/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a></td>
+                <td><a class="icon" href="https://github.com/jessieyli" target="_blank"><i class="fab fa-github fa-3x"></i></a></td>
             </tr>
         </table>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
