@@ -121,7 +121,8 @@ table #topSection {
 #rightImage {
     width: 100%;
     height: 95vh;
-    background: url("newport.jpg");
+    background: url("https://drive.google.com/uc?export=view&id=1YIwdmTxyaShr0N-fQRy3sqeTWAWEToRO");
+    background-size: cover;
 }
 
 #bio {
