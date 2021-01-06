@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 60px;
+  overflow-y: scroll
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold !important;
+}
+
+#personal-blurb {
+  text-align: center;
+}
+
+#down-arrow {
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+}
+#down-arrow:hover {
+  text-decoration: none;
+}
+
+#project-grid {
+  padding-top: 60px;
+}
+#personal-info {
+  padding-top: 60px;
+}
+.project-thumbnail {
+  position: relative;
+  max-width: 100%;
+}
+.project-thumbnail:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay-text {
+  width: 75%;
+  color: white;
+  text-align: center;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.navbar-nav .active {
+  background-color: #E1EFFE;
+}
+

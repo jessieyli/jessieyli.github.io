@@ -1,0 +1,161 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #CBDDF8;
+    scroll-behavior: smooth;
+}
+p {
+    font-size: 20px;
+}
+
+#loading {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #CBDDF8;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#spinner{
+    width: 50px;
+    height: 50px;
+    border: 12px solid #f3f3f3; /* Light grey */
+    border-top: 12px solid #3498db; /* Blue */
+    border-radius: 50%;
+    animation: spin 0.5s infinite linear;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+header {
+    width: 92vw;
+    padding: 5vh 3vw;
+    position: fixed;
+    background: transparent;
+    color: white;
+    z-index: 3;
+    transition: 0.2s ease-in-out
+}
+header table {
+    width: 100%;
+}
+
+#nav {
+    width: 80%;
+    text-align: right;
+}
+#nav a {
+    color: inherit;
+    font-size:24px;
+    text-decoration: none;
+    padding: 2px 4px;
+    margin-left: 2vw;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+#nav a:hover {
+    border-bottom: 2px solid white;
+}
+#nav a.scrolled {
+    background-color: #fff;
+    color: black;
+}
+
+
+#topSection {
+    width: 100%;
+    height: 100%;
+    border: 2vh solid white;
+}
+table #topSection {
+    width: 100%;
+}
+#topSection tr td{
+    width: 50%;
+}
+#about {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0px 6vw;
+}
+#about h1 {
+    font-size: 48px;
+    word-wrap: break-word;
+    line-height: 5%;
+}
+#about p {
+    font-size: 24px;
+}
+#about table {
+    width: 70%;
+}
+#about tr td {
+    width: 20%;
+    text-align: left;
+}
+ 
+.icon {
+    color: orange;
+    padding: 0px 0px;
+    background: transparent;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+}
+.icon:hover {
+    cursor: pointer;
+    color: green;
+}
+
+#rightImage {
+    width: 100%;
+    height: 95vh;
+    background: url("https://drive.google.com/uc?export=view&id=1YIwdmTxyaShr0N-fQRy3sqeTWAWEToRO");
+    background-size: cover;
+}
+
+#bio {
+    width: 86vw;
+    padding: 4vh 7vw;
+}
+
+#projects {
+    width: 86vw;
+    padding: 4vh 7vw;
+}
+#hobbies {
+    width: 86vw;
+    padding: 4vh 7vw;
+}
+#photos {
+    width: 100%;
+    columns: 3;
+    column-gap: 5%;
+    transition: 0.4s ease-in-out;
+}
+
+#photos img {
+    width: 100%;
+    height: auto;
+    margin: 3% 0px;
+    transition: 0.4s ease-in-out;
+}
+#photos img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#footer {
+    padding: 3vh;
+    text-align: center;
+}

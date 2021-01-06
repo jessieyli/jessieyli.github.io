@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jessie Li</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <div id="navigation-bar" class="container sticky-top navbar-light bg-white">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="home.html"><h5>jessie li</h5></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#section-options"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="section-options">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="project-pg" class="container">
+      <div class="row">
+        <div id="project-summary" class="col-md-3">
+          <h4>Personas and Storyboards</h4>
+          <p>
+            How do we gather information about how different people interact with certain
+            objects?
+          </p>
+
+          <div class="btn btn-outline-primary disabled">User Research</div>
+        </div>
+        <div id="project-descrip" class="col-12 col-md-9">
+          <h4>Introduction</h4>
+          <p>
+            At the beginning of my UI/UX course, we learned about different methods of
+            gathering research about user experiences. For this project, we were to choose
+            an interface that could be improved and observe users in order to develop
+            personas and a storyboard around that interface.
+          </p>
+          <h4>Context</h4>
+          <p>
+            I chose to observe people's interactions with a microwave in my home because
+            it's a commonly used item and has a relatively complex interface. The
+            following image is a sketch of its controls with a few notes.
+          </p>
+          <div class="img-container">
+            <img
+              src="assets/personas/microwave_sketch.png"
+              width="70%"
+              class="img-thumbnail"
+            />
+          </div>
+          <p>
+            As shown above, the interface provides various ways to use and control the
+            microwave. The key components involve a start/pause and a clear/off button,
+            along with various other buttons for different modes, such as “popcorn” and
+            “defrost”.
+          </p>
+          <br />
+          <h4>Observations and Research</h4>
+          <p>After observing 3 people use the microwave, I've noticed:</p>
+          <ul>
+            <li>
+              Users A and B only use the ‘time cook’ function. User C also used ‘defrost’
+              and ‘reheat’, but took longer to decide.
+            </li>
+            <li>
+              The majority of microwave usage was between 30 seconds and 3 minutes. There
+              were few instances of microwave times greater than 5 minutes, primarily by
+              user C.
+            </li>
+            <li>
+              User A double presses the circular wheel to start, while users B and C press
+              the circular wheel and then the ‘start’ button. User A is noticeably a lot
+              faster at starting the microwave, while the other two seem to struggle a bit
+              with selecting a specific amount of time.
+            </li>
+            <li>Users A and B tend to stop the microwave early.</li>
+            <li>
+              Most of the items microwaved were leftovers: mainly rice and side dishes.
+              User C defrosted shrimp, while User A made a bowl of ramen and some popcorn.
+            </li>
+          </ul>
+
+          <p>
+            Then, I asked my 3 users the following questions with the following summarized
+            responses:
+          </p>
+          <ol>
+            <li>Are you in a time crunch?</li>
+            There was only one instance were the user was using the microwave with a
+            strict time crunch, and it was because user A had a Zoom meeting.
+            <li>How essential is the food that you're microwaving?</li>
+            Most instances were for
+            <b>meals</b>
+            (lunch and dinner), and user A described a few non-essential uses like warming
+            up a cookie and melting butter for a dessert.
+            <li>Is there another device you could use instead?</li>
+            Answers involved using the stove and a pot or pan, but users A and B
+            emphasized that it would
+            <b>take longer</b>
+            and involve more dishes to wash.
+            <li>What’s going to happen to the item you put in?</li>
+            Most of the answers involved wanting to
+            <b>heat up</b>
+            some kind of food item.
+            <li>Are there any buttons you don’t need?</li>
+            We noticed that no one used the ‘convection bake’, ‘convection roast’, or
+            ‘combination fast bake’ buttons on the right of the wheel. ‘Micro express’ was
+            a mystery that came up a few times, and in fact, only user C expressed that
+            they use multiple different buttons.
+          </ol>
+          <br />
+          <h4>Empathy Maps</h4>
+          <p>
+            Using the data collected during my observations and interviews, I constructed
+            2 personas with empathy maps that describe what they think, feel, say, and do.
+          </p>
+          <div class="row">
+            <div class="images col-md-6">
+              <img src="assets/personas/jason_empathy.png" class="img-fluid" />
+            </div>
+            <div class="col-md-6">
+              <p>
+                The first persona I constructed was Jason. Jason is the parent of a
+                college-aged kid, nearing his 60s. His wife goes to work during the day,
+                but since he works from home, he now has to do a lot more cooking. He’s
+                definitely more experienced with using more traditional means of cooking
+                and heating food as he’s not well-versed in navigating the microwave’s
+                interface.
+              </p>
+              <p>
+                He struggles with the microwave interface because of the overwhelming
+                number of choices and finds the wheel in the middle confusing to use.
+              </p>
+              <p>
+                Jason represents the older users of the microwave interface and those who
+                tend to incorporate the microwave as a part of the cooking process,
+                instead of solely relying on it. These users may have more varied uses for
+                the microwave, such as defrosting ingredients and boiling water.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="images col-md-6">
+              <img src="assets/personas/jenny_empathy.png" class="img-fluid" />
+            </div>
+            <div class="col-md-6">
+              <p>
+                The second persona I constructed was Jenny. Jenny is a college-aged
+                student taking classes full-time and involved with quite a few clubs. She
+                doesn’t really enjoy cooking.
+              </p>
+              <p>
+                Jenny primarily uses the microwaves to prepare meals quickly, such as
+                frozen dumplings from Trader Joe’s. Her main problem with the current
+                interface is that she only really ever uses the ‘time cook’ function, but
+                it’s quite inconvenient for longer amounts.
+              </p>
+              <p>
+                Jenny represents the younger users that enjoy and are accustomed to
+                microwaveable foods. A lot of people, like Jenny, tend to use the
+                microwave because they want to be quick and efficient. These types of
+                users want to streamline the process and get to their desired result as
+                easily as possible.
+              </p>
+            </div>
+          </div>
+          <br />
+
+          <h4>Storyboard</h4>
+          <p>
+            Finally, using Jenny as the main persona, I created the following storyboard
+            that provides context and shows how she would interact with the microwave:
+          </p>
+          <img src="assets/personas/storyboard.png" width="90%" class="img-thumbnail" />
+          <br />
+          <h4>Conclusion</h4>
+          <p>
+            This project allowed me to practice collecting observations and showed me how
+            difficult it was to create good interview questions. In particular, it was
+            hard to ask unbiased questions that revealed deeper insights.
+          </p>
+          <p>
+            In general, I've learned that it's really important to consider the different
+            contexts in which people use a specific interface and think about how a
+            person's background influences their interactions. This project allowed me to
+            get a better understanding of a user's mental model, become more empathetic,
+            and think about how specific improvements would improve a person's experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-footer" class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 offset-md-3">
+          <button
+            type="button"
+            id="scrolltop"
+            onclick="topFunction()"
+            class="btn btn-primary"
+          >
+            Go Back to Top
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="button.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+</html>

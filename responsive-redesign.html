@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jessie Li</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <div id="navigation-bar" class="container sticky-top navbar-light bg-white">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="home.html"><h5>jessie li</h5></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#section-options"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="section-options">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="home.html">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="project-pg" class="container">
+      <div class="row">
+        <div id="project-summary" class="col-md-3">
+          <h4>No.1 Boba Tea Responsive Redesign</h4>
+          <p>
+            A redesign of a local boba tea shop's website,
+            focusing on better usability and learnability. <br><br>The redesigned site is deployed
+            for viewing <a href="https://no-1-boba-tea-redesign.herokuapp.com/">here</a>.
+          </p>
+          <div class="btn btn-outline-primary disabled">Balsamiq</div>
+          <div class="btn btn-outline-primary disabled">Figma</div>
+          <div class="btn btn-outline-primary disabled">HTML/CSS</div>
+          <div class="btn btn-outline-primary disabled">Bootstrap</div>
+        </div>
+        <div id="project-descrip" class="col-12 col-md-9">
+          <h4>Introduction</h4>
+          <p>
+            This project focuses on redesigning the website for No. 1 Boba Tea, a local
+            boba tea store in Las Vegas. When visiting
+            <a href="https://www.no1bobatea.us/">their website</a>, most of the parts are
+            functional and they are able to get their points across in presenting their
+            menu, locations, and providing background about the store. However, the site
+            looks dated and suffers from a few usability issues. As such, in my redesign,
+            I focus on making the site <b>more user friendly</b>, making elements
+            <b>more intuitive</b>, and simplifying the structure so that information is
+            more readable and <b>more logically grouped</b>.
+          </p>
+          <h4>Analysis</h4>
+          <p>
+            I first began by more closely analyzing the details of the webpage, focusing
+            on the usability and accessibility concepts that we discussed in class. My
+            main points are described in more detail below and annotated in the following
+            screenshot:
+          </p>
+          <div class="img-container">
+            <img
+              src="assets/redesign/originalwnotes.png"
+              width="90%"
+              class="img-thumbnail"
+            />
+          </div>
+          <b>Usability:</b>
+          <ul>
+            <li>
+              (1) the menu for different sections is below a lot of other information, and
+              you have to scroll up to reach the primary navigation bar; prevents users
+              from smoothly navigating around the different pages
+            </li>
+            <li>
+              (1) menu options are really tiny in comparison to the other site content and
+              a little difficult to read
+            </li>
+            <li>
+              (5) phone numbers and locations are all in one large clump so it’s hard to
+              tell which phone number is with which location
+            </li>
+          </ul>
+          <b>Learnability:</b>
+          <ul>
+            <li>(1) font sizes don't really follow specific logic</li>
+            <li>
+              (2) the colors of the buttons seem random and don’t have special meaning
+              (green, white, red [may have unintended connotations towards the Italian
+              flag], and blue on hover)
+            </li>
+            <li>
+              (3) large section with no obvious and significant meaning (“the art of tea”)
+            </li>
+            <li>
+              (4) gallery on first glance isn’t intuitive about switching images (no
+              buttons or arrows)
+              <ul>
+                <li>
+                  hardly any obvious color contrast between currently active image and
+                  other images
+                </li>
+              </ul>
+            </li>
+            <li>
+              (5) “order now” is bolded, which can misleadingly suggest a clickable link
+            </li>
+          </ul>
+          <b>Memorability:</b>
+          <ul>
+            <li>
+              (1) tons of menu options makes it overwhelming and cluttered; users must
+              read through all the options in order to navigate the site
+            </li>
+            <li>
+              grouping and hierarchy doesn’t really make sense in a few places, which
+              makes it difficult to remember the site's layout
+              <ul>
+                <li>
+                  (6) map icon links to one specific location that doesn’t match the main
+                  address on the webpage and is grouped with the other social media icons
+                </li>
+                <li>
+                  (6) two contact options are listed on the left, which overlaps with the
+                  social media links on the bottom
+                </li>
+                <li>
+                  (7) commendations and awards are on opposite ends of the page (one on
+                  the top and one on the bottom)
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            In terms of <b>accessibility</b>, there weren't any glaring visual concerns
+            except for the low contrast created by the black text on a red background.
+            With the WebAIM WAVE tool, I noticed that although the website's alt tags were
+            not descriptive (ex: “Resized 4 OTS.jpg” for their logo). Furthermore, when
+            using the screen reader, I found that there were 5 different elements to go
+            through before reaching their main navigation and in the navigation bar,
+            between “menu” and “pick and brew tea”, there were 9 sub elements of “menu”
+            that we had to navigate through. As such, in my redesign, I want to prioritize
+            being able to better navigate through the main navigation bar and making
+            descriptions more clear.
+          </p>
+          <h4>Lo-fi Wireframes</h4>
+          <p>
+            Based on the usability problems identified in the previous section, I first
+            created some mockups for my redesign while trying to keep as many of the
+            original elements as possible. In these wireframes of 3 different devices
+            (desktop, tablet, and phone), I’ve annotated the sections that have been
+            re-designed with the numbers associated with their identified problems and
+            described them in further detail below.
+          </p>
+          <div class="img-container">
+            <img src="assets/redesign/lofi1.png" width="80%" class="img-thumbnail" />
+          </div>
+          <br />
+          <div class="img-container">
+            <img src="assets/redesign/lofi2.png" width="40%" class="img-thumbnail" />
+            <img src="assets/redesign/lofi3.png" width="30%" class="img-thumbnail" />
+          </div>
+          <ol>
+            <li>
+              To increase efficiency and usability, I moved the site’s navigation bar to
+              the top. This creates a
+              <b>more consistent theme</b> for the rest of the pages in the website. This
+              mockup also keeps the navigation bar fixed at the top, making it
+              <b>easy to access</b> while browsing. Some of the sections were cut down or
+              renamed, making the point of each section <b>more clear</b> and increasing
+              readability. In the mobile version, the menu is collapsed into a clickable
+              button to prevent clutter and increase space efficiency.
+            </li>
+            <li>
+              Combined the different colored buttons into a single “Order Online” button
+              in the upper right, which makes the interface <b>more standard</b> and
+              <b>more learnable</b>. Moving the order button here should also
+              <b>increase visual contrast</b> and draw attention without using distracting
+              colors. In the mobile version, this feature is inside the menu.
+            </li>
+            <li>
+              This sectionw as combined with the “new drink” image to create a gallery.
+              This creates a <b>more centralized</b> spot for announcements and banner
+              advertisements. It’ll also allow the website to stay
+              <b>more consistent</b> even if the images and content change, increasing
+              <b>memorability</b>.
+            </li>
+            <li>
+              In the original website, it’s difficult to tell what the images in the
+              gallery are and how to navigate the gallery. In the redesign, I added arrows
+              to promote
+              <b>more intuitive controls</b>. The arrows are added on top of the image to
+              <b> minimize unnecessary white space </b>, especially for the mobile and
+              tablet versions.
+            </li>
+            <li>
+              I grouped together each location with its phone number and added a bit of
+              extra whitespace in between each location to create a grid that encourages
+              <b>better readability</b> and keeps this section distinct from other
+              information. I also took out the bold styling in “Call Us to Order” in order
+              to <b>prevent misinterpretations</b> of a clickable link.
+            </li>
+            <li>
+              Here, the maps icon was taken out because it redirected people to one
+              specific location. The icons were also changed to reflect a
+              <b> more updated </b> and well-maintained interface. The Facebook and email
+              sections were also moved here to <b>group similar elements</b> and
+              <b>create a hierarchy</b> that emphasizes calling and ordering over emailing
+              and social media.
+            </li>
+            <li>
+              Finally, since I took out the “Reviews” section from the navigation bar, I
+              combined it with the two commendations and awards that the shop wanted to
+              display. This way, <b>similar information is grouped</b>, which also makes
+              it easier to process.
+            </li>
+          </ol>
+          <h4>Hi-fi Prototyping</h4>
+          <p>
+            Next, I produced some hifi prototypes on Figma, one for large screens, one for
+            tablet screens, and one for mobile screens.
+          </p>
+          <div class="img-container">
+            <img src="assets/redesign/hifi1.png" width="90%" class="img-thumbnail" />
+          </div>
+          <br />
+          <div class="img-container">
+            <img src="assets/redesign/hifi2.png" width="70%" class="img-thumbnail" />
+          </div>
+          <br />
+          <div class="img-container">
+            <img src="assets/redesign/hifi3.png" width="80%" />
+          </div>
+          <br />
+          <h4>Visual Style Guide and Implementation</h4>
+          <p>
+            After constructing the hi-fi prototypes, I created the following style guide:
+          </p>
+          <div class="img-container">
+            <img src="assets/redesign/A4 - 1.png" width="60%" class="img-thumbnail" />
+          </div>
+          <br />
+          <p>
+            Then, using HTML/CSS and Bootstrap, I was able to successfully create the
+            responsive website. You can
+            <a href="https://no-1-boba-tea-redesign.herokuapp.com/">check it out here!</a>
+          </p>
+          <div class="img-container">
+            <img src="assets/redesign/redesigned.png" width="75%" class="img-thumbnail" />
+          </div>
+          <br />
+          <h4>Conclusion</h4>
+          <p>
+            This project challenged my ability to identify design problems online and
+            critically think about possible improvements. I gained a lot of valuable
+            insight regarding the importance of accessibility and saw first-hand how much
+            of the web isn't well-designed for everyone to use.
+          </p>
+          <p>
+            I also gained more knowledge about the design process itself. While it was
+            time consuming to analyze each element and go through the various different
+            wireframes, those steps helped build a more thoughtful design. When actually
+            implementing the website, I was really astonished by how much easier it was to
+            use Bootstrap to make elements responsive and will definitely utilize it more
+            in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-footer" class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 offset-md-3">
+          <button
+            type="button"
+            id="scrolltop"
+            onclick="topFunction()"
+            class="btn btn-primary"
+          >
+            Go Back to Top
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="button.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+</html>

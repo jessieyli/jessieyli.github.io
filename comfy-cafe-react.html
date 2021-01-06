@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jessie Li</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <div id="navigation-bar" class="container sticky-top navbar-light bg-white">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="home.html"><h5>jessie li</h5></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#section-options"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="section-options">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="project-pg" class="container">
+      <div class="row">
+        <div id="project-summary" class="col-md-3">
+          <h4>Comfy Cafe Shop</h4>
+          <p>
+            A store page for a hypothetical cafe selling East
+            Asian snacks and drinks. The app supports filtering by taste (salty vs sweet), type
+            (snacks vs drinks), and sorting by price. <br /><br>It can be viewed and
+            interacted with <a href="https://comfy-cafe-20.herokuapp.com/">here</a>.
+          </p>
+
+          <div class="btn btn-outline-primary disabled">React</div>
+          <div class="btn btn-outline-primary disabled">Bootstrap</div>
+        </div>
+        <div id="project-descrip" class="col-12 col-md-9">
+          <h4>Introduction</h4>
+          <p>
+            For this project, we were to create a React app that uses a list interface
+            that implements sorting and filtering. I chose to create a store page for a
+            hypothetical cafe that sells various Asian snacks and drinks because it would
+            have a similar structure to most other online shops. You can browse the items
+            that they offer and choose items to add to your shopping cart.
+          </p>
+          <div class="img-container">
+            <img
+              src="assets/development/screenshot.PNG"
+              width="80%"
+              class="img-thumbnail"
+            />
+          </div>
+          <br />
+          <h4>Goals and Research</h4>
+          <p>
+            The goal of this application is to simulate a real store's item catalog and
+            shopping cart. Users should be able to browse the items by selecting certain
+            filters and sorting by price, and then make a purchase by adding and removing
+            items from their shopping cart. As such, I wanted to ensure that the interface
+            was readable and easy to use and ended up looking at other online stores to
+            see their browsing options.
+          </p>
+          <p>
+            More specifically, this app was designed to give the users an idea of what
+            East Asian snacks there are and what kinds of brands/items are being sold in
+            Asian grocery stores. In order to allow users to realistically see what kinds
+            of snacks they would be interested in purchasing and see how they compare to
+            traditional American snacks, I did some research to keep the listed prices
+            fairly accurate.
+          </p>
+          <h4>Improvements and Additions</h4>
+          <p>
+            In my first iteration of this app, I had all the items displayed in one long
+            list and the shopping cart only included the name of each item and its
+            quantity. Since most online stores use a grid for easier browsing, I made each
+            item and its description into a well ordered and consistent grid. I also ended
+            up adding to the shopping cart in order to display more information about each
+            item. Now, the shopping cart displays a mini image, the quantity, and the per
+            unit price.
+          </p>
+          <h4>Conclusion</h4>
+          <p>
+            Something I took away from this project was being able to identify a specific
+            goal and then create an app around that idea. While having an store with an
+            online catalog and shopping cart isn't revolutionary, I think it's important
+            to understand how similar concepts can be tailored towards more specific
+            applications.
+          </p>
+          <p>
+            While working on this project, I also became a lot more comfortable about
+            working in React and thinking about component hierarchy. In this app, I stored
+            a lot of information locally and didn't fully implement a checkout structure,
+            but in the future, I'm excited to be able to tackle more complex and
+            interactive web apps that will handle larger amounts of data.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-footer" class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 offset-md-3">
+          <button
+            type="button"
+            id="scrolltop"
+            onclick="topFunction()"
+            class="btn btn-primary"
+          >
+            Go Back to Top
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="button.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+</html>

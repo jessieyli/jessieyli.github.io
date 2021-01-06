@@ -1,0 +1,43 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 60px;
+  overflow-y: scroll
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold !important;
+}
+
+#project-pg {
+  padding-top: 60px;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+img {
+  display: block;
+}
+
+.img-container {
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#project-footer {
+  margin-bottom: 60px;
+}
+
+.navbar-nav .active {
+  background-color: #E1EFFE;
+}
+
+#project-summary {
+  padding-bottom: 20px;
+}
